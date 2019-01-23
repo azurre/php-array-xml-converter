@@ -1,21 +1,21 @@
 lib-array2xml
 =============
 
-Array2XML conversion library credit to lalit.org
+Array2Xml conversion library credit to lalit.org
 
 Usage
 ----
 ```php
 //create XML
-$xml = Array2XML::createXML('root_node_name', $php_array);
+$xml = Array2Xml::createXML('root_node_name', $php_array);
 echo $xml->saveXML();
 
 //create Array
-$array = XML2Array::createArray($xml);
+$array = Xml2Array::createArray($xml);
 print_r($array);
 ```
 
-Array2XML
+Array2Xml
 ----
 
 @xml example:
@@ -29,7 +29,7 @@ $array = [
 ];
 
 // Use the Array2XML object to transform it.
-$xml = Array2XML::createXML('news', $array);
+$xml = Array2Xml::createXML('news', $array);
 echo $xml->saveXML();
 ```
 This will result in the following.
